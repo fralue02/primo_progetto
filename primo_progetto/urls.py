@@ -23,4 +23,6 @@ urlpatterns = [
     path("seconda_app/", include("seconda_app.urls")),
     path("news/", include("news.urls")),
     path("", index, name="index")
+    path('', include('libreria.urls'))
+
 ]
