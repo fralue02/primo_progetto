@@ -5,9 +5,9 @@ from django.views.generic.list   import ListView
 
 
 class AutoreDetailCVB(DetailView):
-     model = Autore_lf
-     template_name = "autore.html"
+    model = Autore_lf
+    template_name = "autore.html"
 
 class LibroListCVB(ListView):
-     model = Libro_lf
-     template_name = "lista_libri.html"
+    model = Libro_lf
+    template_name = "lista_libri.html"
