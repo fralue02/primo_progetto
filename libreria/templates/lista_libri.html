@@ -3,7 +3,8 @@
 {% block content %}
 <h1>libreria:</h1>
 <br>
-{% for libro in object list %}
+
+{% for libro in object_list %}
 <h4><strong>Titolo:</strong>{{libro.titolo}}</h4>
 <h5><strong>Autore:</strong><a href="{libro.autore.get_absolute_url}}">{{libro.autore}}</a></h5>
 <h5><strong>Genere:</strong>{% for genere in libro.genere.all %}{{libro.genere}}{% endfor %}</h5>
